@@ -1,2 +1,2 @@
 docker_build:
-	docker build -t uselesswebapp:latest .
+	docker build -t registry.digitalocean.com/supermegacr/uselesswebapp:dev .
