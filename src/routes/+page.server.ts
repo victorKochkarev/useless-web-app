@@ -19,5 +19,7 @@ export const actions = {
 			return;
 		}
 		console.log(completion.choices[0].message.content)
+
+		return { success: true }
 	},
 } satisfies Actions;
