@@ -1,2 +1,4 @@
-<h1>Welcome to Useless Web App</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<form method="POST" action="?/login">
+	<textarea name="actionText"></textarea>
+	<button>Just Do it</button>
+</form>
