@@ -16,7 +16,7 @@
 		<h1>What do you want me to do?</h1>
 	{/if}
 
-	<textarea name="actionText"></textarea><br/>
+	<textarea name="actionText" class="textarea textarea-secondary"></textarea><br/>
 	<button class="btn btn-secondary" >Just Do it</button>
 </form>
 
