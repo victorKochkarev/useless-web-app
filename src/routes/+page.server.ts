@@ -4,7 +4,8 @@ import OpenAI from "openai";
 export const actions = {
 	callForAction: async ({ request }) => {
 		const formData = await request.formData();
-		let requestString = formData.get("actionText")
+		const requestString = formData.get("actionText")
+		console.log(`REQUEST: ${requestString}`)
 
 		const openai = new OpenAI();
 
