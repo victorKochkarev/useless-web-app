@@ -22,8 +22,8 @@ export const actions = {
 		if(completion.choices.length == 0) {
 			return { success: false };
 		}
-		console.log(completion.choices[0].message.content)
+		const excuse = completion.choices[0].message.content
 
-		return { success: true }
+		return { success: true , excuse: excuse }
 	},
 } satisfies Actions;
