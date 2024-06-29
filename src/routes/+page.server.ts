@@ -7,6 +7,10 @@ export const actions = {
 		const requestString = formData.get("actionText")
 		console.log(`REQUEST: ${requestString}`)
 
+		if (requestString === "") {
+			return { success: false }
+		}
+
 		const openai = new OpenAI();
 
 		const prefix = "make an excuse why I should not";
