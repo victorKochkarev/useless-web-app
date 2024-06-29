@@ -16,7 +16,7 @@ export const actions = {
 		});
 
 		if(completion.choices.length == 0) {
-			return;
+			return { success: false };
 		}
 		console.log(completion.choices[0].message.content)
 
